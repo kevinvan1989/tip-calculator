@@ -26,7 +26,54 @@
     </style>
   </head>
   <body>
-    
+    <h1>
+      <span class="hidden">Splitter</span>
+      <img src="./images/logo.svg" alt="" />
+    </h1>
+    <div class="box">
+      <!-- BEGIN LEFT / UPPER SIDE -->
+      <section class="input-side">
+      <div class="bill box__item">
+        <h2>Bill</h2>
+        <input type="number">
+      </div>
+      <div class="select-tip box__item">
+        <h2>Select Tip %</h2>
+        <div class="select-tip__items">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <button><input type="number" name="customTip" id="customTip">Custom</button>
+        </div>
+      </div>
+      <div class="number-of-people box__item">
+        <h2>Number of People</h2>
+        <input type="number" name="numberOfPeople" id="numberOfPeople">
+      </div>
+    </section>
+    <!-- END LEFT / UPPER SIDE -->
+    <!-- BEGIN RIGHT / LOWER SIDE -->
+    <section class="output-side">
+      <div class="tip-amount box__item">
+        <div class="tip-amount__text"></div>
+        <div class="tip-amount__number"></div>
+      </div>
+      <div class="total box__item">
+        <div class="total__text">
+          Tip Amount 
+          <span class="per-person">/ person</span>
+        </div>
+        <div class="total__number">
+          Total
+          <span class="per-person">/ person</span>
+        </div>
+      </div>
+      <button type="reset">RESET</button>
+    </section>
+    <!-- END RIGHT / LOWER SIDE -->
+    </div>
 
     <div class="attribution">
       Challenge by
