@@ -1,0 +1,28 @@
+.box {
+  min-width: 500px;
+  max-width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-side {
+  width: 50%;
+}
+
+.output-side {
+  width: 45%;
+}
+
+.select-tip__items .tip__percentage {
+  width: 33%;
+}
+/*# sourceMappingURL=screen.css.map */

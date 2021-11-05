@@ -1,0 +1,21 @@
+.box{
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-side{
+    width: 50%;
+}
+
+.output-side{
+    width: 45%;
+}
+
+.select-tip__items .tip__percentage{
+    width: 33%;
+}
