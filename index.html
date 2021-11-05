@@ -12,6 +12,9 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/screen.css" media="(min-width: 680px)">
     <title>Frontend Mentor | Tip calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -35,39 +38,48 @@
       <section class="input-side">
       <div class="bill box__item">
         <h2>Bill</h2>
-        <input type="number">
+        <div class="input-with-icon psr">
+          <input type="number" id="bill-amount" value="5" >
+          <img src="./images/icon-dollar.svg" alt="Dollar icon" class="icon-input">
+        </div>
+        
       </div>
       <div class="select-tip box__item">
         <h2>Select Tip %</h2>
         <div class="select-tip__items">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <button><input type="number" name="customTip" id="customTip">Custom</button>
+          <button class="tip__percentage">5%</button>
+          <button class="tip__percentage">10%</button>
+          <button class="tip__percentage">15%</button>
+          <button class="tip__percentage">25%</button>
+          <button class="tip__percentage">50%</button>
+          <button class="tip__percentage"><input type="number" name="customTip" id="customTip" class="tip__percentage" placeholder="Custom"></button>
         </div>
       </div>
       <div class="number-of-people box__item">
         <h2>Number of People</h2>
-        <input type="number" name="numberOfPeople" id="numberOfPeople">
+        <div class="input-with-icon psr">
+          <input type="number" value="5" name="numberOfPeople" id="numberOfPeople">
+          <img src="./images/icon-person.svg" alt="Dollar icon" class="icon-input">
+        </div>
       </div>
     </section>
     <!-- END LEFT / UPPER SIDE -->
     <!-- BEGIN RIGHT / LOWER SIDE -->
     <section class="output-side">
       <div class="tip-amount box__item">
-        <div class="tip-amount__text"></div>
-        <div class="tip-amount__number"></div>
+        <div class="tip-amount__text">
+          Tip Amount <br>
+          <span class="per-person">/ person</span>
+        </div>
+        <div class="tip-amount__number">$123.00</div>
       </div>
       <div class="total box__item">
         <div class="total__text">
-          Tip Amount 
+          Total <br>
           <span class="per-person">/ person</span>
         </div>
         <div class="total__number">
-          Total
-          <span class="per-person">/ person</span>
+          $123.00
         </div>
       </div>
       <button type="reset">RESET</button>

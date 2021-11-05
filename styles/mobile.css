@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "Space Mono", monospace, sans-serif;
+  background: #c5e4e7;
+}
+
+.hidden {
+  display: none;
+}
+
+.psr {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: #5e7a7d;
+  font-size: 1.3rem;
+}
+
+.box,
+.output-side {
+  background: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.box__item {
+  margin-bottom: 2.5rem;
+}
+
+input[type=number] {
+  display: block;
+  background: #f4fafa;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #00494d;
+  font-weight: 700;
+  padding: .8rem;
+  text-align: right;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+input[type=number]:focus {
+  outline: none;
+  -webkit-box-shadow: 2px 2px 3px 1px #c5e4e7;
+          box-shadow: 2px 2px 3px 1px #c5e4e7;
+}
+
+.icon-input {
+  position: absolute;
+  display: block;
+  left: .8rem;
+  top: 1.1rem;
+}
+
+.select-tip__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.select-tip__items .tip__percentage {
+  border: none;
+  background: #00494d;
+  color: #f4fafa;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 48%;
+  padding: 1rem 0;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+}
+
+.select-tip__items .tip__percentage:last-child {
+  padding: 0;
+}
+
+.select-tip__items .tip__percentage #customTip {
+  width: 100%;
+  height: 100%;
+  background: #f4fafa;
+  text-align: center;
+}
+
+.select-tip__items .tip__percentage #customTip:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #00494d;
+}
+
+.output-side {
+  background: #00494d;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.tip-amount,
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.tip-amount__text,
+.total__text {
+  color: #f4fafa;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.tip-amount__text span,
+.total__text span {
+  color: #7f9c9f;
+  color: #c5e4e7;
+  font-size: .8rem;
+}
+
+.tip-amount__number,
+.total__number {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+button[type=reset] {
+  border: none;
+  text-align: center;
+  background: #26c0ab;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=mobile.css.map */
