@@ -1,0 +1,145 @@
+@import './styling';
+
+body{
+    font-family: "Space Mono", monospace, sans-serif;
+    background: $lightGrayishCyan;
+}
+
+.hidden{
+    display: none;
+}
+
+.psr{
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    color: $darkGrayishCyan;
+    font-size: 1.3rem;
+}
+
+.box,
+.output-side{
+    background: $white;
+    border-radius: 20px;
+    padding: 1rem;
+    
+}
+
+.box__item{
+    margin-bottom: 2.5rem;
+}
+
+input[type=number]{
+    display: block;
+    background: $lightGrayishCyanLighter;
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+    color: $veryDarkCyan;
+    font-weight: 700;
+    padding: .8rem;
+    text-align: right;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    
+    &:focus{
+        outline: none;
+        //border: 1px solid #000;
+        box-shadow: 2px 2px 3px 1px $lightGrayishCyan;
+    }
+}
+
+.icon-input{
+    position: absolute; 
+    display: block;
+    left: .8rem;
+    top: 1.1rem;
+}
+
+.select-tip__items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .tip__percentage{
+        border: none;
+        background: $veryDarkCyan;
+        color: $lightGrayishCyanLighter;
+        font-weight: 700;
+        font-size: 1.5rem;
+        width: 48%;
+        padding: 1rem 0;
+        margin-bottom: .5rem;
+        border-radius: 5px;
+
+         &:last-child{
+             padding: 0;
+         }
+
+         #customTip{
+             width: 100%;
+             height: 100%;
+             background: $lightGrayishCyanLighter;
+             //border-radius: 0;
+             text-align: center;
+
+
+             &:focus{
+                box-shadow: none;
+                color: $veryDarkCyan;
+             }
+         }
+    }
+}
+
+.output-side{
+    background: $veryDarkCyan;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.tip-amount,
+.total{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.tip-amount__text,
+.total__text{
+    color: $lightGrayishCyanLighter;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    span{
+        color: $darkGrayishCyanLighter;
+        color: $lightGrayishCyan;
+        font-size: .8rem;
+    }
+}
+
+.tip-amount__number,
+.total__number{
+    color: $primary;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+button[type=reset]{
+        border: none;
+        text-align: center;
+        background: $primary;
+        color: $veryDarkCyan;
+        font-weight: 700;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1rem 0;
+        margin-bottom: .5rem;
+        border-radius: 5px;
+}
