@@ -39,7 +39,7 @@
       <div class="bill box__item">
         <h2>Bill</h2>
         <div class="input-with-icon psr">
-          <input type="number" id="bill-amount" value="5" >
+          <input type="number" id="bill-amount" placeholder="0">
           <img src="./images/icon-dollar.svg" alt="Dollar icon" class="icon-input">
         </div>
         
@@ -47,18 +47,18 @@
       <div class="select-tip box__item">
         <h2>Select Tip %</h2>
         <div class="select-tip__items">
-          <button class="tip__percentage">5%</button>
-          <button class="tip__percentage">10%</button>
-          <button class="tip__percentage">15%</button>
-          <button class="tip__percentage">25%</button>
-          <button class="tip__percentage">50%</button>
-          <button class="tip__percentage"><input type="number" name="customTip" id="customTip" class="tip__percentage" placeholder="Custom"></button>
+          <button class="tip__percentage" data-percentage=0.05 >5%</button>
+          <button class="tip__percentage" data-percentage=0.10>10%</button>
+          <button class="tip__percentage" data-percentage=0.15>15%</button>
+          <button class="tip__percentage" data-percentage=0.25>25%</button>
+          <button class="tip__percentage" data-percentage=0.50>50%</button>
+          <input type="number" name="customTip" id="customTip" class="tip__percentage" placeholder="Custom">
         </div>
       </div>
       <div class="number-of-people box__item">
         <h2>Number of People</h2>
         <div class="input-with-icon psr">
-          <input type="number" value="5" name="numberOfPeople" id="numberOfPeople">
+          <input type="number" name="numberOfPeople" id="numberOfPeople" placeholder="0">
           <img src="./images/icon-person.svg" alt="Dollar icon" class="icon-input">
         </div>
       </div>
@@ -71,7 +71,7 @@
           Tip Amount <br>
           <span class="per-person">/ person</span>
         </div>
-        <div class="tip-amount__number">$123.00</div>
+        <div class="tip-amount__number">---</div>
       </div>
       <div class="total box__item">
         <div class="total__text">
@@ -79,7 +79,7 @@
           <span class="per-person">/ person</span>
         </div>
         <div class="total__number">
-          $123.00
+          ---
         </div>
       </div>
       <button type="reset">RESET</button>
@@ -93,5 +93,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
